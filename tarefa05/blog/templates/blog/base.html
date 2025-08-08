@@ -11,44 +11,65 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #e8f5e9; /* Verde claro bem suave */
+        background-color: #1a1a1a; /* Fundo preto escuro */
       }
   
       body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        color: #1b5e20; /* Verde escuro para o texto */
+        color: #ffffff; /* Texto branco */
         font-family: Arial, sans-serif;
       }
   
       main {
         flex: 1;
-        background-color: #ffffff; /* Mantive branco para contraste */
+        background-color: #000000; /* Fundo preto */
         padding: 20px;
-        box-shadow: 0 2px 4px rgba(46, 125, 50, 0.2); /* Sombra esverdeada */
+        box-shadow: 0 0 10px rgba(199, 0, 0, 0.7); /* Brilho vermelho mais intenso */
         margin: 15px;
         border-radius: 8px;
-        border: 1px solid #a5d6a7; /* Borda verde clara */
+        border: 2px solid #c70000; /* Borda vermelha mais espessa */
       }
   
       footer {
         font-size: 14px;
-        background-color: #2e7d32; /* Verde mais intenso */
-        color: #e8f5e9; /* Texto verde claro */
+        background-color: #000000; /* Preto */
+        color: #ffffff; /* Texto branco */
         padding: 15px;
         text-align: center;
         margin-top: auto;
+        border-top: 3px solid #c70000;
+        box-shadow: 0 -2px 5px rgba(199, 0, 0, 0.5); /* Sombra vermelha superior */
       }
   
-      /* Opcional: estilizar links se necessário */
+      /* Links com efeito neon rubro-negro */
       a {
-        color: #388e3c; /* Verde médio para links */
+        color: #ff0000; /* Vermelho mais vivo */
         text-decoration: none;
+        font-weight: bold;
+        text-shadow: 0 0 3px rgba(255, 0, 0, 0.7); /* Efeito de brilho */
+        transition: all 0.3s ease;
       }
       
       a:hover {
-        color: #1b5e20; /* Verde mais escuro no hover */
+        color: #ffffff; /* Branco no hover */
+        text-shadow: 0 0 8px rgba(255, 0, 0, 0.9); /* Brilho mais forte */
+        text-decoration: none;
+      }
+      
+      /* Destaques rubro-negros */
+      .flamengo-color {
+        color: #ff0000;
+        background-color: #000000;
+        border: 1px solid #ff0000;
+      }
+      
+      /* Efeito de gradiente para títulos */
+      h1, h2, h3 {
+        background: linear-gradient(to right, #000000, #c70000, #000000);
+        -webkit-text-fill-color: transparent;
+        padding: 5px 0;
       }
     </style>
 </head>
