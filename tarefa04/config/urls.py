@@ -14,15 +14,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-# Conteúdo completo de config/urls.py
-# ESTE É O CÓDIGO CORRETO PARA: config/urls.py
+
 
 from django.contrib import admin
-from django.urls import path, include  # AQUI ESTÁ A IMPORTAÇÃO QUE FALTAVA
-
+from django.urls import path, include 
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    # Esta linha conecta com o outro arquivo urls.py
+  
     path('', include('listatarefas.urls')),
 ]

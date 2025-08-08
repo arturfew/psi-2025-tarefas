@@ -1,4 +1,4 @@
-# Conteúdo completo do novo arquivo listatarefas/urls.py
+
 from django.urls import path
 from . import views
 
